@@ -1,37 +1,44 @@
 {
-    "templates": {
-        "c63": {
-            "Template": "content/content/homepagepromo-header",
-            "Folder": "c63",
-            "Marcas": {
-                "Women'secret": "true",
-                "Cortefiel": "true",
-                "Pedro del Hierro": "true",
-                "Springfield": "true",
-                "Fifty Factory": "true"
-            }
-        },
-        "plp-col1": {
-            "Template": "content/content/gridpromo-1col",
-            "Folder": "c63",
-            "Marcas": {
-                "Women'secret": "true",
-                "Cortefiel": "true",
-                "Pedro del Hierro": "true",
-                "Springfield": "true",
-                "Fifty Factory": "true"
-            }
-        },
-        "plp-col2": {
-            "Template": "content/content/gridpromo-1col",
-            "Folder": "c63",
-            "Marcas": {
-                "Women'secret": "true",
-                "Cortefiel": "true",
-                "Pedro del Hierro": "true",
-                "Springfield": "true",
-                "Fifty Factory": "true"
-            }
-        }
+  "templates": {
+      "c63": {
+          "folder": "c63",
+          "template": "content/content/homepagepromo-header",
+          "template_placement": {
+              "homepage": "true",
+              "editorial": "true",
+              "plp": "false",
+              "shoppable": "true"
+          },
+          "SPF": {
+              "active": "true",
+              "image_desktop": "c63/spf_desktop.png",
+              "image_mobile": "c63/spf_mobile.png",
+              "image_sizing": "Desktop: 1220x450px <br /> Mobile: 400x600px"
+          },
+          "WS": {
+              "active": "true",
+              "image_desktop": "c63/ws_desktop.png",
+              "image_mobile": "c63/ws_desktop.png",
+              "image_sizing": "Desktop: 1688x900px <br /> Mobile: 400x600px"
+          },
+          "CTF": {
+              "active": "true",
+              "image_desktop": "c63/ctf_desktop.png",
+              "image_mobile": "c63/ctf_desktop.png",
+              "image_sizing": "Desktop: 1771x900px <br /> Mobile: 400x600px"
+          },
+          "PDH": {
+              "active": "true",
+              "image_desktop": "c63/pdh_desktop.png",
+              "image_mobile": "c63/pdh_desktop.png",
+              "image_sizing": "Desktop: 2000x900px <br /> Mobile: 400x600px"
+          },
+          "FF": {
+              "active": "true",
+              "image_desktop": "c63/ff_desktop.png",
+              "image_mobile": "c63/ff_desktop.png",
+              "image_sizing": "Desktop: 1220x686px <br /> Mobile: 400x600px"
+          }
+      }
     }
 }
