@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Firebase</title>
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script>
+      // Set the configuration for your app
+      // TODO: Replace with your project's config object
+          var config = {
+        apiKey: "AIzaSyAxAW_n0xvPjXtWlyzFc-Hc0uhfBu55DrI",
+        authDomain: "templates-a2d96.firebaseapp.com",
+        databaseURL: "https://templates-a2d96.firebaseio.com",
+        storageBucket: "templates-a2d96.appspot.com",
+        messagingSenderId: "944815082647"
+      };
+
+      firebase.initializeApp(config);
+
+      // Get a database reference to our posts
+      var database = firebase.database();
+
+      //ON. Accede a todo el objeto
+      var ref = firebase.database().ref('templates');
+      ref.on('value', function(snapshot) {
+        var template = snapshot.val();
+        console.log(template);
+      });
+
+      //ON. Accede a un hijo, esperando cambios
+      var ref = firebase.database().ref('templates').child('c63');
+      ref.on('value', function(snapshot) {
+        var template = snapshot.val().Template;
+        console.log(template);
+      });
+
+      //ONCE. Accede a un hijo, sin esperar cambios
+      var ref = firebase.database().ref('templates').child('c63');
+      ref.once('value').then(function(snapshot) {
+        var template = snapshot.val().Template;
+        console.log(template);
+      });
+
+      /* ref.on("value", function(snapshot) {
+        console.log(snapshot.val());
+      }, function (errorObject) {
+        console.log("The read failed: " + errorObject.code);
+      });*/
+
+
+
+      /*function writeUserData(userId, userEmail, userName, userPhone){
+        firebase.database().ref(userId).set({
+          email: userEmail,
+          name: userName,
+          phone: userPhone
+        });
+      }
+*/
+      // writeUserData(3, "carlos@grupocortefiel.com", "Carlos Ortiz", "123456789");
+  </script>
+
+
+</body>
+
+</html>

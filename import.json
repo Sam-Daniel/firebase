@@ -1,0 +1,37 @@
+{
+    "templates": {
+        "c63": {
+            "Template": "content/content/homepagepromo-header",
+            "Folder": "c63",
+            "Marcas": {
+                "Women'secret": "true",
+                "Cortefiel": "true",
+                "Pedro del Hierro": "true",
+                "Springfield": "true",
+                "Fifty Factory": "true"
+            }
+        },
+        "plp-col1": {
+            "Template": "content/content/gridpromo-1col",
+            "Folder": "c63",
+            "Marcas": {
+                "Women'secret": "true",
+                "Cortefiel": "true",
+                "Pedro del Hierro": "true",
+                "Springfield": "true",
+                "Fifty Factory": "true"
+            }
+        },
+        "plp-col2": {
+            "Template": "content/content/gridpromo-1col",
+            "Folder": "c63",
+            "Marcas": {
+                "Women'secret": "true",
+                "Cortefiel": "true",
+                "Pedro del Hierro": "true",
+                "Springfield": "true",
+                "Fifty Factory": "true"
+            }
+        }
+    }
+}
