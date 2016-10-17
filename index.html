@@ -9,13 +9,13 @@
     <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
     <script>
       // Set the configuration for your app
-      // TODO: Replace with your project's config object
-          var config = {
-        apiKey: "AIzaSyAxAW_n0xvPjXtWlyzFc-Hc0uhfBu55DrI",
-        authDomain: "templates-a2d96.firebaseapp.com",
-        databaseURL: "https://templates-a2d96.firebaseio.com",
-        storageBucket: "templates-a2d96.appspot.com",
-        messagingSenderId: "944815082647"
+      // Replace with your project's config object
+      var config = {
+        apiKey: "",
+        authDomain: "",
+        databaseURL: "",
+        storageBucket: "",
+        messagingSenderId: ""
       };
 
       firebase.initializeApp(config);
@@ -44,23 +44,7 @@
         console.log(template);
       });
 
-      /* ref.on("value", function(snapshot) {
-        console.log(snapshot.val());
-      }, function (errorObject) {
-        console.log("The read failed: " + errorObject.code);
-      });*/
 
-
-
-      /*function writeUserData(userId, userEmail, userName, userPhone){
-        firebase.database().ref(userId).set({
-          email: userEmail,
-          name: userName,
-          phone: userPhone
-        });
-      }
-*/
-      // writeUserData(3, "carlos@grupocortefiel.com", "Carlos Ortiz", "123456789");
   </script>
 
 
